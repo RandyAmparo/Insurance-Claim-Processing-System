@@ -1,0 +1,32 @@
+/*Changes background color */
+body{
+    background-color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    margin:0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+table{
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 12px;
+    border: 1px solid rgb(35, 95, 35);
+}
+/* table heading color change */
+th{
+    background-color: rgb(35, 95, 35);
+    color: white;
+}
+/*changes color when hovered */
+p a{
+    color: rgb(35, 95, 35);
+}
+
+p a:hover{
+    color: black;
+}

@@ -1,0 +1,49 @@
+/* Changes background color */
+body{
+    background-color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    margin:0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+table{
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+/* For table spacing and borders */
+th, td{
+    padding: 12px;
+    border: 1px solid rgb(35, 95, 35);
+}
+/* Makes the th green with white letters */
+th{
+    background-color: rgb(35, 95, 35);
+    color: white;
+}
+/* Sizing for approve and deny buttons */
+input[type="submit"]{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgb(35, 95, 35);
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(35, 95, 35);
+    color: white;
+}
+
+p a{
+    color: rgb(35, 95, 35);
+}
+
+p a:hover{
+    color: black;
+}
