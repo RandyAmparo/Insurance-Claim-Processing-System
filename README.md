@@ -4,7 +4,7 @@ A CIS 344 group project built with PHP, HTML, CSS, and MySQL. Employees can sign
 
 ## Run locally with XAMPP
 
-1. Download or clone this repository. Copy the application files into `C:\xampp\htdocs\insurance_project\`. Keep the PHP, HTML, and CSS files together, with `index.html` directly inside that folder.
+1. Download this repository. Copy the application files into `C:\xampp\htdocs\insurance_project\`. Keep the PHP, HTML, and CSS files together, with `index.html` directly inside that folder.
 2. Open the XAMPP Control Panel and start **Apache**.
 3. Confirm the database is named `insurance_firm_344`. Check the MySQL connection settings in `login.php`, `add_claim.php`, `pending_claims.php`, and `view_claims.php`. The original settings use `localhost`, user `root`, and a blank database password. If your local server uses different credentials or a different port, update all four local copies.
 4. Open [the login page](http://localhost/insurance_project/index.html) and sign in with a test employee account from your imported sample data. The employee login and MySQL credentials are separate. If Apache runs on a different port, include that port in the localhost URLs.
