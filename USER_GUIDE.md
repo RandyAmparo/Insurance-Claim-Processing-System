@@ -1,6 +1,6 @@
 # Insurance Claim Processing System — User Guide
 
-This guide is for employees using the application. For installation and database setup, see [README.md](README.md).
+This guide is for employees using the application. For installation and database setup, see [README.md](README.md) and [Demo_Insurance_Claim_System,mp4](Demo_Insurance_Claim_System,mp4).
 
 ## 1. Sign in
 
