@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS insurance_firm_344;
 CREATE DATABASE insurance_firm_344;
 USE insurance_firm_344;
 
@@ -10,7 +9,7 @@ email VARCHAR(100) NOT NULL,
 e_password  VARCHAR(45) NOT NULL 
 );
 CREATE TABLE customers(
-customer_id INT(7) PRIMARY KEY NOT NULL UNIQUE,
+customer_id INT(7) PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
 first_name VARCHAR(45)NOT NULL,
 last_name VARCHAR(45) NOT NULL,
 address VARCHAR(45) NOT NULL,
@@ -18,7 +17,7 @@ c_number VARCHAR(12) NOT NULL,
 join_date DATE NOT NULL
 );
 CREATE TABLE policies(
-policy_id INT(7) PRIMARY KEY NOT NULL UNIQUE,
+policy_id INT(7) PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
 customer_id INT(7) NOT NULL UNIQUE,
 coverage_type VARCHAR(45) NOT NULL,
 coverage_limit INT NOT NULL,
@@ -29,13 +28,13 @@ FOREIGN KEY (customer_id)
 REFERENCES customers(customer_id)
 );
 CREATE TABLE claims(
-claim_id INT(7) PRIMARY KEY NOT NULL UNIQUE,
+claim_id INT(7) PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
 policy_id INT(7) NOT NULL,
-reviewed_by INT NOT NULL,
+reviewed_by INT NULL,
 incident_date DATE NOT NULL,
 cl_description TEXT NOT NULL,
 claim_amount DECIMAL(12,2) NOT NULL,
-decision_date DATE NOT NULL,
+decision_date DATE NULL,
 decision_status VARCHAR(45) NOT NULL,
 
 FOREIGN KEY (policy_id) 
